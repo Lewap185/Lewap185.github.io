@@ -1,0 +1,37 @@
+body {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    min-height: 100vh;
+    gap: 10px;
+}
+
+html {
+    background-color: rgb(74, 74, 181);
+}
+
+.semtag {
+    background-color: lightblue;
+    text-align: center;
+    border-radius: 5px;
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+nav {
+    grid-area: 2 / 1 / 6 / 2;
+}
+
+main {
+    grid-area: 2 / 2 / 6 / 6;
+}
+
+aside {
+    grid-area: 2 / 6 / 6 / 7;
+}
+
+footer {
+    grid-area: 6 / 1 / 7 / 7;
+}

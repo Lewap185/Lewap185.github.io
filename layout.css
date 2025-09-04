@@ -19,6 +19,11 @@ ul {
     border-radius: 5px;
 }
 
+.thingsILikeIndex {
+    all: unset;
+    list-style-type: none;
+}
+
 li a {
     display: block;
     color: black;
@@ -44,10 +49,19 @@ li a:hover {
     border-radius: 5px;
 }
 
+.text {
+    text-align: left;
+}
+
 img {
+    height: 50px;
     width: auto;
-    height: 100%;
-    border-radius: 5px;
+}
+
+img.emoji {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
 }
 
 header {
@@ -69,5 +83,7 @@ aside {
 footer {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
     grid-area: 6 / 1 / 7 / 7;
 }

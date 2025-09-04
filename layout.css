@@ -44,6 +44,12 @@ li a:hover {
     border-radius: 5px;
 }
 
+img {
+    width: auto;
+    height: 100%;
+    border-radius: 5px;
+}
+
 header {
     grid-area: 1 / 1 / 2 / 7;
 }
@@ -61,5 +67,7 @@ aside {
 }
 
 footer {
+    display: flex;
+    justify-content: flex-end;
     grid-area: 6 / 1 / 7 / 7;
 }

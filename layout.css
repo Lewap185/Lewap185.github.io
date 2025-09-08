@@ -48,13 +48,14 @@ li a {
 }
 
 details {
-    max-height: 40px;
+    max-height: 50px;
     transition: max-height, 0.4s;
     overflow: hidden;
+    overflow-y: auto;
 }
 
 details[open] {
-    max-height: 300px;
+    max-height: 500px;
 }
 
 li a:hover,

@@ -45,12 +45,6 @@ li a {
     transition: background-color, 0.3s;
 }
 
-/* details {
-    max-height: auto;
-    max-width: auto;
-    transition: max-height, 0.4s;
-} */
-
 details {
     max-height: auto;
     max-width: auto;
@@ -115,26 +109,31 @@ main.faq {
     grid-area: 2 / 2 / 6 / 7;
 }
 
-main.table {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
-    grid-template-rows: 50px;
-    grid-auto-rows: 50px;
-    overflow-x: auto;
+table {
+    width: 100%;
+    height: 100%;
     background-color: rgb(74, 74, 181);
 }
 
-main.table>main.table_header {
+th,
+td,
+tfoot {
+    border: 2px solid rgb(74, 74, 181);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+th {
     background-color: lightblue;
 }
 
-.cell {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+td {
     background-color: rgb(204, 241, 255);
-    border: 2px solid rgb(74, 74, 181);
-    border-radius: 5px;
+}
+
+.table_foot>td {
+    background-color: lightblue;
+    font-weight: bolder;
 }
 
 aside {

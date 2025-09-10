@@ -111,13 +111,12 @@ main.faq {
 
 table {
     width: 100%;
-    height: 100%;
+    height: 500px;
     background-color: rgb(74, 74, 181);
 }
 
 th,
-td,
-tfoot {
+td {
     border: 2px solid rgb(74, 74, 181);
     border-radius: 5px;
     padding: 5px;
@@ -131,8 +130,27 @@ td {
     background-color: rgb(204, 241, 255);
 }
 
-.table_foot>td {
+.bar {
+    position: relative;
+    height: 20px;
+    border-radius: 20px;
     background-color: lightblue;
+    padding: 0;
+    margin: 0;
+}
+
+#bsa {
+    position: absolute;
+    background-color: rgb(238, 31, 31);
+    width: 3px;
+    left: 75%;
+    height: 20px;
+    top: 0;
+}
+
+#progress {
+    width: 50%;
+    background-color: rgb(84, 200, 84);
     font-weight: bolder;
 }
 
@@ -144,23 +162,23 @@ footer {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem;
+    padding: 10px;
     height: auto;
     grid-area: 6 / 1 / 7 / 7;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, auto);
-        min-height: 100vh;
         gap: 10px;
     }
 
     main {
         grid-area: 4 / 1 / 6 / 7;
         height: auto;
+        overflow-x: auto;
     }
 
     main.faq {
@@ -177,4 +195,5 @@ footer {
         grid-area: 3 / 1 / 4 / 7;
         height: auto;
     }
+
 }

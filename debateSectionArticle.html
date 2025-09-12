@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Section vs Article</title>
+    <link rel="stylesheet" href="layout.css">
+</head>
+<body>
+    <header class="semtag">
+        <h1>
+            Section vs Article
+        </h1>
+    </header>
+    <nav class="semtag">
+        <ul>
+            <li>
+                <a href="/blog.html">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="semtag">
+        <p class="text">
+            When I first read about nesting article or section tags I thought the answer was simple: do not worry about it. 
+            Use whatever fits your code!
+            Then I read the three articles on the left that lay down rules for nesting articles inside a section tag or the other way around.
+            The authors made arguments I found compelling and logical and I have definitly changed my opinion!
+            The writers came to the conclusion that the article tag should contain content that is self contained. 
+            In other words, content that is not related to other information on the webpage. 
+            A section element should be used when grouping content and should contain a heading.
+            When nesting section inside article, section should be used to group content of parent container. 
+            For example: a list of comments on a blog. The comments should be inside a section tag and the blog in a article tag.
+            When nesting article inside section, the articles should have self contained content. 
+            For example: an article on a topic of a blog. 
+            I think that these rules give respect to the meaning and original definiton of the section and article tag. 
+            Looking at the definitions of the words it also makes sense why the authors came to their conclusions. 
+        </p>
+    </main>
+    <aside class="semtag">
+        <ul>
+            <li>
+                <a href="https://html.spec.whatwg.org/multipage/sections.html?utm_source=chatgpt.com">article 1</a>
+            </li>
+            <li>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/section?utm_source=chatgpt.com">article 2</a>
+            </li>
+            <li>
+                <a href="https://www.smashingmagazine.com/2022/07/article-section-elements-accessibility/?utm_source=chatgpt.com">article 3</a>
+            </li>
+        </ul>
+    </aside>
+    <footer class="semtag">
+        <img src="images/hz logo.png" alt="Logo of HZ">
+    </footer>
+    </body>
+</html>

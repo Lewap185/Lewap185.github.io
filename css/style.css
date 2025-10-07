@@ -1,3 +1,12 @@
+/** Defining variables often used in my code **/
+:root {
+    --padding: 10px;
+    --colorSemTags: lightblue;
+    --colorElement: rgb(196, 225, 235);
+    --backgroundColor: rgb(74, 74, 181);
+    --radiusBlocks: 5px;
+}
+
 /** General styling of the layout. CSS grid layout and color **/
 body {
     display: grid;
@@ -9,7 +18,7 @@ body {
 }
 
 html {
-    background-color: rgb(74, 74, 181);
+    background-color: var(--backgroundColor);
     font-family: cursive
 }
 
@@ -17,15 +26,15 @@ html {
 
 /** Styling of each block **/
 .semtag {
-    background-color: lightblue;
-    border-radius: 5px;
+    background-color: var(--colorSemTags);
+    border-radius: var(--radiusBlocks);
 }
 
 /** elements that have this class are colloured purple if present on the current webpage **/
 .active {
     background-color: rgb(125, 59, 125);
     color: white;
-    border-radius: 4px;
+    border-radius: var(--radiusBlocks);
 }
 
 header {
@@ -73,8 +82,8 @@ footer {
 }
 
 #Pawel {
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: var(--padding);
+    padding-top: var(--padding);
 }
 
 /** Styling of the lists **/
@@ -83,8 +92,8 @@ ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    background-color: rgb(196, 225, 235);
-    border-radius: 5px;
+    background-color: var(--colorElement);
+    border-radius: var(--radiusBlocks);
 }
 
 ol {
@@ -93,7 +102,7 @@ ol {
 
 li a {
     display: block;
-    padding: 10px;
+    padding: var(--padding);
     color: black;
     text-decoration: none;
     transition: background-color, 0.3s;
@@ -105,15 +114,15 @@ li a {
 }
 
 .normalList>li {
-    padding-left: 10px;
+    padding-left: var(--padding);
 }
 
 /** Styling of the details and summary tag **/
 summary {
     cursor: pointer;
     margin: 5px;
-    background-color: rgb(196, 225, 235);
-    border-radius: 5px;
+    background-color: var(--colorElement);
+    border-radius: var(--radiusBlocks);
     transition: background-color, 0.3s;
 }
 
@@ -123,7 +132,7 @@ details {
 }
 
 details>* {
-    padding-left: 10px;
+    padding-left: var(--padding);
 }
 
 
@@ -131,22 +140,22 @@ details>* {
 table {
     width: 100%;
     height: 100%;
-    background-color: rgb(74, 74, 181);
+    background-color: var(--backgroundColor);
 }
 
 th,
 td {
-    border: 2px solid rgb(74, 74, 181);
-    border-radius: 5px;
+    border: 2px solid var(--backgroundColor);
+    border-radius: var(--radiusBlocks);
     padding: 5px;
 }
 
 th {
-    background-color: lightblue;
+    background-color: var(--colorSemTags);
 }
 
 td {
-    background-color: rgb(204, 241, 255);
+    background-color: var(--colorElement);
 }
 
 /** Styling of the progress bar below the dashboard **/
@@ -155,7 +164,7 @@ td {
     position: relative;
     height: 20px;
     border-radius: 20px;
-    background-color: lightblue;
+    background-color: var(--colorSemTags);
     padding: 0;
     margin: 0;
 }
@@ -165,7 +174,7 @@ td {
     background-color: rgb(238, 31, 31);
     width: 3px;
     left: 75%;
-    height: 20px;
+    height: 100%;
     top: 0;
 }
 
@@ -188,7 +197,7 @@ li a:hover,
 summary:hover {
     background-color: rgb(55, 55, 128);
     color: white;
-    border-radius: 4px;
+    border-radius: var(--radiusBlocks);
 }
 
 /** styling of text and images **/
@@ -198,7 +207,7 @@ summary:hover {
 }
 
 main>p {
-    padding-left: 10px;
+    padding-left: var(--padding);
 }
 
 img {

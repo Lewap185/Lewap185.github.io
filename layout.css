@@ -66,6 +66,17 @@ footer {
     text-align: center;
 }
 
+#profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#Pawel {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
 /** Styling of the lists **/
 
 ul {
@@ -138,6 +149,8 @@ td {
     background-color: rgb(204, 241, 255);
 }
 
+/** Styling of the progress bar below the dashboard **/
+
 .bar {
     position: relative;
     height: 20px;
@@ -166,6 +179,11 @@ td {
 }
 
 /** animations **/
+
+/**changes the colour from light blue to dark blue and the text color from black to white when the user hovers over the navigation menu, 
+aside menu,
+faq questions or 
+blog article **/
 li a:hover,
 summary:hover {
     background-color: rgb(55, 55, 128);
@@ -192,6 +210,13 @@ img.emoji {
     width: 25px;
     height: auto;
     vertical-align: middle;
+}
+
+#Pawel {
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+
 }
 
 

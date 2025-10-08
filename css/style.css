@@ -1,190 +1,189 @@
 /** Defining variables often used in my code **/
 :root {
-    --padding: 10px;
-    --colorSemTags: lightblue;
-    --colorElement: rgb(196, 225, 235);
-    --backgroundColor: rgb(74, 74, 181);
-    --radiusBlocks: 5px;
+  --padding: 10px;
+  --colorSemTags: lightblue;
+  --colorElement: rgb(196, 225, 235);
+  --backgroundColor: rgb(74, 74, 181);
+  --radiusBlocks: 5px;
 }
 
 /** General styling of the layout. CSS grid layout and color **/
 body {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    min-height: 100vh;
-    gap: 10px;
-    font-size: large;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  min-height: 100vh;
+  gap: 10px;
+  font-size: large;
 }
 
 html {
-    background-color: var(--backgroundColor);
-    font-family: cursive
+  background-color: var(--backgroundColor);
+  font-family: cursive;
 }
 
 /** Styling of each section of the page **/
 
 /** Styling of each block **/
 .semtag {
-    background-color: var(--colorSemTags);
-    border-radius: var(--radiusBlocks);
+  background-color: var(--colorSemTags);
+  border-radius: var(--radiusBlocks);
 }
 
 /** elements that have this class are colloured purple if present on the current webpage **/
 .active {
-    background-color: rgb(125, 59, 125);
-    color: white;
-    border-radius: var(--radiusBlocks);
+  background-color: rgb(125, 59, 125);
+  color: white;
+  border-radius: var(--radiusBlocks);
 }
 
 header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-area: 1 / 1 / 2 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 7;
 }
 
 main {
-    grid-area: 2 / 2 / 6 / 6;
+  grid-area: 2 / 2 / 6 / 6;
 }
 
 main.mainWithoutAside {
-    grid-area: 2 / 2 / 6 / 7;
+  grid-area: 2 / 2 / 6 / 7;
 }
 
 nav {
-    grid-area: 2 / 1 / 6 / 2;
-    text-align: center;
+  grid-area: 2 / 1 / 6 / 2;
+  text-align: center;
 }
 
 aside {
-    grid-area: 2 / 6 / 6 / 7;
-    text-align: center;
+  grid-area: 2 / 6 / 6 / 7;
+  text-align: center;
 }
 
 footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 10px;
-    height: auto;
-    grid-area: 6 / 1 / 7 / 7;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  height: auto;
+  grid-area: 6 / 1 / 7 / 7;
 }
 
 #dashboard {
-    text-align: center;
+  text-align: center;
 }
 
 #profile {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 #Pawel {
-    padding-left: var(--padding);
-    padding-top: var(--padding);
+  padding-left: var(--padding);
+  padding-top: var(--padding);
 }
 
 /** Styling of the lists **/
 
 ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: var(--colorElement);
-    border-radius: var(--radiusBlocks);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: var(--colorElement);
+  border-radius: var(--radiusBlocks);
 }
 
 ol {
-    list-style-position: inside;
+  list-style-position: inside;
 }
 
 li a {
-    display: block;
-    padding: var(--padding);
-    color: black;
-    text-decoration: none;
-    transition: background-color, 0.3s;
+  display: block;
+  padding: var(--padding);
+  color: black;
+  text-decoration: none;
+  transition: background-color, 0.3s;
 }
 
 .normalList {
-    all: unset;
-    list-style-type: none;
+  all: unset;
+  list-style-type: none;
 }
 
-.normalList>li {
-    padding-left: var(--padding);
+.normalList > li {
+  padding-left: var(--padding);
 }
 
 /** Styling of the details and summary tag **/
 summary {
-    cursor: pointer;
-    margin: 5px;
-    background-color: var(--colorElement);
-    border-radius: var(--radiusBlocks);
-    transition: background-color, 0.3s;
+  cursor: pointer;
+  margin: 5px;
+  background-color: var(--colorElement);
+  border-radius: var(--radiusBlocks);
+  transition: background-color, 0.3s;
 }
 
 details {
-    max-height: auto;
-    max-width: auto;
+  max-height: auto;
+  max-width: auto;
 }
 
-details>* {
-    padding-left: var(--padding);
+details > * {
+  padding-left: var(--padding);
 }
-
 
 /** Styling of the table on the dashboard page **/
 table {
-    width: 100%;
-    height: 100%;
-    background-color: var(--backgroundColor);
+  width: 100%;
+  height: 100%;
+  background-color: var(--backgroundColor);
 }
 
 th,
 td {
-    border: 2px solid var(--backgroundColor);
-    border-radius: var(--radiusBlocks);
-    padding: 5px;
+  border: 2px solid var(--backgroundColor);
+  border-radius: var(--radiusBlocks);
+  padding: 5px;
 }
 
 th {
-    background-color: var(--colorSemTags);
+  background-color: var(--colorSemTags);
 }
 
 td {
-    background-color: var(--colorElement);
+  background-color: var(--colorElement);
 }
 
 /** Styling of the progress bar below the dashboard **/
 
 .bar {
-    position: relative;
-    height: 20px;
-    border-radius: 20px;
-    background-color: var(--colorSemTags);
-    padding: 0;
-    margin: 0;
+  position: relative;
+  height: 20px;
+  border-radius: 20px;
+  background-color: var(--colorSemTags);
+  padding: 0;
+  margin: 0;
 }
 
 #bsa {
-    position: absolute;
-    background-color: rgb(238, 31, 31);
-    width: 3px;
-    left: 75%;
-    height: 100%;
-    top: 0;
+  position: absolute;
+  background-color: rgb(238, 31, 31);
+  width: 3px;
+  left: 75%;
+  height: 100%;
+  top: 0;
 }
 
 #progress {
-    width: 50%;
-    background-color: rgb(84, 200, 84);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+  width: 50%;
+  background-color: rgb(84, 200, 84);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bolder;
 }
 
 /** animations **/
@@ -195,69 +194,66 @@ faq questions or
 blog article **/
 li a:hover,
 summary:hover {
-    background-color: rgb(55, 55, 128);
-    color: white;
-    border-radius: var(--radiusBlocks);
+  background-color: rgb(55, 55, 128);
+  color: white;
+  border-radius: var(--radiusBlocks);
 }
 
 /** styling of text and images **/
 
 .bolderText {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
-main>p {
-    padding-left: var(--padding);
+main > p {
+  padding-left: var(--padding);
 }
 
 img {
-    height: 50px;
-    width: auto;
+  height: 50px;
+  width: auto;
 }
 
 img.emoji {
-    width: 25px;
-    height: auto;
-    vertical-align: middle;
+  width: 25px;
+  height: auto;
+  vertical-align: middle;
 }
 
 #Pawel {
-    width: 120px;
-    height: auto;
-    border-radius: 20px;
-
+  width: 120px;
+  height: auto;
+  border-radius: 20px;
 }
-
 
 /** Styling when the page becomes horizontally smaller then 900px **/
 
 @media (max-width: 900px) {
-    body {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, auto);
-        gap: 10px;
-    }
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    gap: 10px;
+  }
 
-    main {
-        grid-area: 4 / 1 / 6 / 7;
-        height: auto;
-        overflow-x: auto;
-    }
+  main {
+    grid-area: 4 / 1 / 6 / 7;
+    height: auto;
+    overflow-x: auto;
+  }
 
-    main.mainWithoutAside {
-        grid-area: 3 / 1 / 6 / 7;
-        height: auto;
-    }
+  main.mainWithoutAside {
+    grid-area: 3 / 1 / 6 / 7;
+    height: auto;
+  }
 
-    nav {
-        grid-area: 2 / 1 / 3 / 7;
-        height: auto;
-    }
+  nav {
+    grid-area: 2 / 1 / 3 / 7;
+    height: auto;
+  }
 
-    aside {
-        grid-area: 3 / 1 / 4 / 7;
-        height: auto;
-    }
-
+  aside {
+    grid-area: 3 / 1 / 4 / 7;
+    height: auto;
+  }
 }

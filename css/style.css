@@ -44,18 +44,15 @@ header {
   grid-area: 1 / 1 / 2 / 7;
 }
 
-main {
-  grid-area: 2 / 2 / 6 / 6;
-}
-
-main.mainWithoutAside {
-  grid-area: 2 / 2 / 6 / 7;
-}
-
 nav {
   grid-area: 2 / 1 / 6 / 2;
   text-align: center;
 }
+
+main {
+  grid-area: 2 / 2 / 6 / 6;
+}
+
 
 aside {
   grid-area: 2 / 6 / 6 / 7;
@@ -66,7 +63,7 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 10px;
+  padding: var(--padding);
   height: auto;
   grid-area: 6 / 1 / 7 / 7;
 }
@@ -75,15 +72,20 @@ footer {
   text-align: center;
 }
 
-#profile {
+#profileMain {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#Pawel {
-  padding-left: var(--padding);
-  padding-top: var(--padding);
+#feedbackMain {
+  display: flex;
+  justify-content: space-between;
+  padding-right: var(--padding);
+}
+
+#feedbackMain > section {
+  max-width: 250px;
 }
 
 /** Styling of the lists **/
@@ -114,6 +116,14 @@ li a {
 }
 
 .normalList > li {
+  padding-left: var(--padding);
+}
+
+.listFeedback {
+  all: unset;
+  list-style-position: inside;
+}
+.listFeedback > li {
   padding-left: var(--padding);
 }
 
@@ -205,7 +215,8 @@ summary:hover {
   font-weight: bolder;
 }
 
-main > p {
+
+p {
   padding-left: var(--padding);
 }
 
@@ -214,16 +225,21 @@ img {
   width: auto;
 }
 
-img.emoji {
-  width: 25px;
-  height: auto;
-  vertical-align: middle;
-}
 
 #Pawel {
   width: 120px;
   height: auto;
   border-radius: 20px;
+  padding-left: var(--padding);
+  padding-top: var(--padding);
+}
+
+#gym {
+  width: 150px;
+  height: auto;
+  border-radius: 20px;
+  padding-left: var(--padding);
+  padding-top: var(--padding);
 }
 
 /** Styling when the page becomes horizontally smaller then 900px **/
@@ -236,24 +252,26 @@ img.emoji {
     gap: 10px;
   }
 
-  main {
-    grid-area: 4 / 1 / 6 / 7;
-    height: auto;
-    overflow-x: auto;
-  }
-
-  main.mainWithoutAside {
-    grid-area: 3 / 1 / 6 / 7;
-    height: auto;
-  }
-
   nav {
     grid-area: 2 / 1 / 3 / 7;
     height: auto;
   }
 
-  aside {
+  main {
     grid-area: 3 / 1 / 4 / 7;
     height: auto;
+    overflow-x: auto;
   }
+
+  aside {
+    grid-area: 4 / 1 / 6 / 7;
+    height: auto;
+  }
+
+  #feedbackMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: var(--padding);
+}
 }

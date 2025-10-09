@@ -8,6 +8,8 @@
   --backgroundColor: rgb(74, 74, 181);
   --radiusBlocks: 5px;
   --colorText: rgb(0, 0, 0);
+  --sizeFont: larger;
+  --fontFamily: cursive;
 }
 
 /** General styling of the layout. CSS grid layout and color **/
@@ -17,13 +19,13 @@ body {
   grid-template-rows: repeat(auto, 1fr);
   min-height: 100vh;
   gap: var(--padding);
-  font-size: large;
+  font-size: var(--sizeFont);
   color: var(--colorText);
 }
 
 html {
   background-color: var(--backgroundColor);
-  font-family: cursive;
+  font-family: var(--fontFamily);
 }
 
 /** Styling of each section of the page **/

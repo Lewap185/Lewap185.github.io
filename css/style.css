@@ -72,12 +72,6 @@ footer {
   text-align: center;
 }
 
-#profileMain {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 #feedbackMain {
   display: flex;
   justify-content: space-between;
@@ -220,7 +214,7 @@ p {
   padding-left: var(--padding);
 }
 
-img {
+.hzLogo {
   height: 50px;
   width: auto;
 }
@@ -240,6 +234,11 @@ img {
   border-radius: 20px;
   padding-left: var(--padding);
   padding-top: var(--padding);
+}
+
+#personBehindPC {
+  width: 250px;
+  height: auto;
 }
 
 /** Styling when the page becomes horizontally smaller then 900px **/
